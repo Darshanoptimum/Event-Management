@@ -1,0 +1,41 @@
+<div class="container  mt-5" >
+    <div class="row">
+        <!-- <div class="col-md-5 mx-auto"> -->
+        <div id="first">
+            <div class="myform form ">
+                <div class="col-md-12 " *ngIf="events">
+                    <div class="form-group">
+                        <div >
+                            <table class="table col-md-12 " id="expensestable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Index</th>
+                                        <th scope="col">Event Name</th>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">End Date</th>
+                                        <th scope="col">View more</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of events,let i=index">
+                                        <th scope="row">{{i+1}}</th>
+                                        <td>{{data.EventName}}</td>
+                                        <td>{{data.EventStartDate?.slice(0,10)}}</td>
+                                        <td>{{data.EventEndDate?.slice(0,10)}}</td>
+                                        <td><button type="button" (click)="btnview(data.Id)" class=" btn btn-block mybtn btn-primary tx-tfm">view</button></td>
+                                    </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo mb-3" *ngIf="!events">
+                    <div class="col-md-12 text-center text-danger">
+                        <h5>No Event found</h5>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

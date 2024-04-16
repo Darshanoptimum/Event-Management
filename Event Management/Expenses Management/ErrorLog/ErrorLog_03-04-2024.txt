@@ -1,0 +1,153 @@
+------------------------------------------03-04-2024 10:51:45 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 10:51:45 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 10:52:01 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 10:52:01 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 10:59:10 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 10:59:49 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 10:59:54 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 11:01:59 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:09:41 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:11:08 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:14:02 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:23:10 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:29:09 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:30:58 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:33:33 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:38:06 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:38:22 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:42:25 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:42:49 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:43:22 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:44:50 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:48:04 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:51:01 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:53:47 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:54:01 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:54:01 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 11:54:01 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>ExceptionIndex was outside the bounds of the array.   at System.String.get_Chars(Int32 index)
+   at BL.insertExpenses.insertExpensesInfo(ExpensesEntity expenses) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 8\Expenses Management\BL\insertExpenses.cs:line 30
+------------------------------------------03-04-2024 11:54:12 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:54:14 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 11:54:14 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>ExceptionIndex was outside the bounds of the array.   at System.String.get_Chars(Int32 index)
+   at BL.insertExpenses.insertExpensesInfo(ExpensesEntity expenses) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 8\Expenses Management\BL\insertExpenses.cs:line 30
+------------------------------------------03-04-2024 11:55:07 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:55:10 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 11:56:22 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>ExceptionIndex was outside the bounds of the array.   at System.String.get_Chars(Int32 index)
+   at BL.insertExpenses.insertExpensesInfo(ExpensesEntity expenses) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 8\Expenses Management\BL\insertExpenses.cs:line 30
+------------------------------------------03-04-2024 11:56:28 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:56:30 AM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 11:57:52 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:58:21 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:59:11 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:59:36 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:59:45 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 11:59:58 AM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:00:00 PM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 12:09:01 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:17:38 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:27:41 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:43:44 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:44:19 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.ExpensesEntity
+------------------------------------------03-04-2024 12:44:21 PM------------------------------------------
+insertExpenses=>insertExpensesInfo=>Started
+------------------------------------------03-04-2024 04:38:00 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:38:15 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 04:39:10 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:39:10 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 04:40:43 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:40:43 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 04:41:03 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:42:58 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:44:12 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:55:50 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 04:56:18 PM------------------------------------------
+ExpensesController => insertExpenses => insert Model.UserEntity
+------------------------------------------03-04-2024 05:05:58 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:40:27 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:44:12 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:46:02 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:46:49 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:47:05 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:47:05 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 05:55:44 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:55:44 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 05:56:01 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:56:03 PM------------------------------------------
+insertUser => insertUserInfo => Started
+------------------------------------------03-04-2024 05:56:51 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:56:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------03-04-2024 05:57:08 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------03-04-2024 05:57:08 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------03-04-2024 05:57:18 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity

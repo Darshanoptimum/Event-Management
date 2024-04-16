@@ -1,0 +1,52 @@
+------------------------------------------07-04-2024 03:26:57 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------07-04-2024 03:26:57 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------07-04-2024 03:27:18 PM------------------------------------------
+UserLoginInfo => userLogin => ExceptionA connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at LIBRARY.SqlHelperParameterCache.DiscoverSpParameterSet(SqlConnection connection, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2472
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSetInternal(SqlConnection connection, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2645
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2589
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2569
+   at LIBRARY.SqlHelper.ExecuteDataset(String connectionString, String spName, Object[] parameterValues) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 521
+   at BL.UserLoginInfo.userLogin(UserEntity user) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\BL\UserLoginInfo.cs:line 33
+------------------------------------------07-04-2024 03:28:02 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------07-04-2024 03:28:14 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------07-04-2024 03:28:57 PM------------------------------------------
+UserLoginInfo => userLogin => ExceptionThe stored procedure 'SP_UserLogIn' doesn't exist.   at System.Data.SqlClient.SqlCommand.DeriveParameters()
+   at System.Data.SqlClient.SqlCommandBuilder.DeriveParameters(SqlCommand command)
+   at LIBRARY.SqlHelperParameterCache.DiscoverSpParameterSet(SqlConnection connection, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2473
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSetInternal(SqlConnection connection, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2645
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName, Boolean includeReturnValueParameter) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2589
+   at LIBRARY.SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 2569
+   at LIBRARY.SqlHelper.ExecuteDataset(String connectionString, String spName, Object[] parameterValues) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\SqlHelper.cs:line 521
+   at BL.UserLoginInfo.userLogin(UserEntity user) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\BL\UserLoginInfo.cs:line 33
+------------------------------------------07-04-2024 03:34:18 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------07-04-2024 03:34:20 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------07-04-2024 03:34:33 PM------------------------------------------
+UserController => publishedEvent => strat
+------------------------------------------07-04-2024 03:34:33 PM------------------------------------------
+publishedEvent => PublishEvent => Started
+------------------------------------------07-04-2024 03:34:47 PM------------------------------------------
+UserController => publishedEvent => strat
+------------------------------------------07-04-2024 03:34:47 PM------------------------------------------
+publishedEvent => PublishEvent => Started
+------------------------------------------07-04-2024 03:50:40 PM------------------------------------------
+UserController => RegisterUser => insert Model.UserEntity
+------------------------------------------07-04-2024 03:50:41 PM------------------------------------------
+UserLoginInfo => userLogin => Started
