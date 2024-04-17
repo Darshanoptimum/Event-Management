@@ -2,7 +2,7 @@
     width: 10%;
     background: linear-gradient(to bottom, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
     color: rgb(250, 200, 200);
-    height: 100vh;
+    min-height: 715px;
 }
 .right-side{
     width: 90%;

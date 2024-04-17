@@ -1,22 +1,31 @@
-<div class="container">
-    <table class="table table-success" id="expensestable">
-        <thead>
-            <tr>
-                <th scope="col">Index</th>
-                <th scope="col">Event Name</th>
-                <th scope="col">Start Date</th>
-                <th scope="col">End Date</th>
-                <th scope="col">Add</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let data of events,let i=index">
-                <th scope="row">{{i+1}}</th>
-                <td>{{data.EventName}}</td>
-                <td>{{data.EventStartDate?.slice(0,10)}}</td>
-                <td>{{data.EventEndDate?.slice(0,10)}}</td>
-                <td>{{data.AddDate.toString().substring(0,10).split('-').reverse().join('-') +" "+
-                    data.AddDate.toString().substring(11,19) | changeDate :'month' : 'secound'}}</td>
-            </tr>
-    </table>
+<div class="border border-secondary">
+
+
+    <div class="logo mt-5">
+        <div class="col-md-12 text-center">
+            <h1>All Upcomings Events</h1>
+        </div>
+    </div>
+    <div class="container mt-5 w-75">
+        <table class="table table-primary" id="expensestable">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Index</th>
+                    <th scope="col" class="text-center">Event Name</th>
+                    <th scope="col" class="text-center">Start Date</th>
+                    <th scope="col" class="text-center">End Date</th>
+                    <th scope="col" class="text-center">Published</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of events,let i=index">
+                    <th scope="row" class="text-center">{{i+1}}</th>
+                    <td class="text-center">{{data.EventName}}</td>
+                    <td class="text-center">{{data.EventStartDate}}</td>
+                    <td class="text-center">{{data.EventEndDate}}</td>
+                    <td class="text-center">{{data.AddDate  | changeDate :'month' : 'secound' }}</td>
+                </tr>
+        </table>
+    </div>
+
 </div>

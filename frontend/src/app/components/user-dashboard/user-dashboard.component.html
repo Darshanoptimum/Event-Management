@@ -19,15 +19,17 @@
                                         <th scope="col">Event Name</th>
                                         <th scope="col">Start Date</th>
                                         <th scope="col">End Date</th>
+                                        <th scope="col">Starts In</th>
                                         <th scope="col">View more</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr *ngFor="let data of events,let i=index">
-                                        <th scope="row">{{i+1}}</th>
+                                        <th scope="row">{{indexofpage+i+1}}</th>
                                         <td>{{data.EventName}}</td>
-                                        <td>{{data.EventStartDate?.slice(0,10)}}</td>
-                                        <td>{{data.EventEndDate?.slice(0,10)}}</td>
+                                        <td>{{data.EventStartDate}}</td>
+                                        <td>{{data.EventEndDate}}</td>
+                                        <td>{{data.EventStartDate | afterdate}}</td>
                                         <td><button type="button" (click)="btnview1(data.Id)"
                                                 class=" btn btn-block mybtn btn-primary tx-tfm">view</button></td>
                                     </tr>
@@ -40,10 +42,15 @@
                         <h5>No Event found</h5>
                     </div>
                 </div>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary"
+                <div class="btn-group cus justify-content-center" role="group" aria-label="Basic example">
+                    <!-- <button type="button" class="btn btn-secondary"
                         *ngFor="let j of [].constructor(buttonpg) ,let i=index" (click)="btnview(i+1)">{{i+1}}
-                    </button>
+                    </button> -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"  *ngFor="let j of [].constructor(buttonpg) ,let i=index" (click)="btnview(i+1)"><a class="page-link">{{i+1}}</a></li>
+                        </ul>
+                      </nav>
                 </div>
             </div>
         </div>

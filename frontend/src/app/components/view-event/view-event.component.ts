@@ -20,6 +20,7 @@ export class ViewEventComponent {
   eventInfo = new EventInfo();
   ngOnInit(): void {
     this.eventInfo.Id = this.apiService.eventId;
+    // call api for 
     this.apiService.addPerson(this.eventInfo,"api/AllEventsinfo")
       .subscribe(
         data => {

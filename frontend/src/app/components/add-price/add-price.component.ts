@@ -55,6 +55,8 @@ export class AddPriceComponent {
           if(data.ArrayOfResponse.length>0){
             this.activitys=data.ArrayOfResponse;
             console.log(this.activitys)
+          }else{
+            this.activitys=[];
           }
           
         }, 

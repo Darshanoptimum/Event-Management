@@ -87,8 +87,10 @@ export class AddActivityComponent implements OnInit{
       .subscribe(
         data => {
           console.log(data)
-          this.minDate=data.ArrayOfResponse[0].EventStartDate.toString().substring(0,10).split('-').reverse().join('-')+"T12:00";
-          this.maxDate=data.ArrayOfResponse[0].EventEndDate.toString().substring(0,10).split('-').reverse().join('-')+"T00:00";
+          // this.minDate=data.ArrayOfResponse[0].EventStartDate.toString().substring(0,10).split('-').reverse().join('-')+"T12:00";
+          // this.maxDate=data.ArrayOfResponse[0].EventEndDate.toString().substring(0,10).split('-').reverse().join('-')+"T00:00";
+          this.minDate=data.ArrayOfResponse[0].EventStartDate+"T00:00";
+          this.maxDate=data.ArrayOfResponse[0].EventEndDate+"T00:00";
           console.log(this.myForm.value.Startdate)
           console.log(this.minDate)
           console.log(this.maxDate)

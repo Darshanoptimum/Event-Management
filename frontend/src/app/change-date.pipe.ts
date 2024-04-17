@@ -2,11 +2,13 @@ import { DatePipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'changeDate'
+  name: 'changeDate',
+  pure: false 
 })
 export class ChangeDatePipe implements PipeTransform {
 
   transform(date: string, arg1: string,arg2: string): any {
+    debugger
     const Pdate=new Date();
     const Pastdate = new Date(date);
     const timediff = Pdate.getTime()-Pastdate.getTime();
@@ -36,7 +38,7 @@ export class ChangeDatePipe implements PipeTransform {
         return month + " month " + day + " day " + hour + " hour " + minute + " minute ago" ;  
       } 
       else if (arg2=='secound'){
-        return month + " month " + day + " day " + hour + " hour " + minute + " minute " + secound + " secound ago" ;    
+        return month + " month " + day + " day " + hour + " hour " + minute + " minute " + secound + " secound ago";    
       } 
     } 
     else if (arg1=='day'){

@@ -21,9 +21,9 @@ import { UserGuard } from './Guard/user.guard';
 import { AdminGuard } from './Guard/admin.guard';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { AdminHomePageComponent } from './components/admin-home-page/admin-home-page.component';
-import { UserEventTableComponent } from './components/user-event-table/user-event-table.component';
 import { ChangeDatePipe } from './change-date.pipe';
 import { SocialAuthService } from 'angularx-social-login';
+import { AfterdatePipe } from './afterdate.pipe';
 
 @NgModule({
   declarations: [
@@ -39,8 +39,8 @@ import { SocialAuthService } from 'angularx-social-login';
     ViewEventComponent,
     HomePageComponent,
     AdminHomePageComponent,
-    UserEventTableComponent,
     ChangeDatePipe,
+    AfterdatePipe,
 
 
   ],

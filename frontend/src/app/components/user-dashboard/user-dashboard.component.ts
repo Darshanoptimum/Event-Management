@@ -14,31 +14,14 @@ export class UserDashboardComponent implements OnInit {
   constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef, private router: Router, private viewGuard: VieweventGuard) { }
   events?: Event[];
   event = new Event();
-
   showFirst: boolean = true;
   page: any;
-
   EventperPage = 8;
   buttonpg: any;
-
-  toggleSections() {
-    this.showFirst = !this.showFirst;
-  }
+  indexofpage!:number;
 
   ngOnInit(): void {
-    // this.apiService.addPerson(this.event,"api/publishedEvent")
-    //   .subscribe(
-    //     data => {
-    //       if(data.ArrayOfResponse.length>0){
-    //         this.event=data.ArrayOfResponse;
-    //         this.events=data.ArrayOfResponse;
-    //       }
-    //       console.log(this.event)
-    //       console.log(data)
-    //     }, 
-    //     error => {
-    //       console.log(error);
-    // });
+    // call api for first page data
     setTimeout(() => {
       let obj = { Page: 1, EventPerPage: this.EventperPage }
       this.apiService.addPerson(obj, "api/GetEventDataForPage")
@@ -47,27 +30,28 @@ export class UserDashboardComponent implements OnInit {
             if (data.ArrayOfResponse.length > 0) {
               this.event = data.ArrayOfResponse;
               this.events = data.ArrayOfResponse;
+              this.indexofpage=0;
             }
-            console.log(this.event)
-            console.log(data.ArrayOfResponse.Startdate)
+            // console.log(this.event)
+            // console.log(data.ArrayOfResponse.Startdate)
           },
           error => {
             console.log(error);
           });
     }, 10);
+    // call api for count of reponse event
     this.apiService.addPerson(this.page, "api/Eventcount")
       .subscribe(
         data => {
           this.buttonpg = Math.ceil(data / this.EventperPage)
-          console.log(this.buttonpg);
+          // console.log(this.buttonpg);
 
         },
         error => {
           console.log(error);
         });
-
   }
-
+  // call api for specific page data
   btnview(id: any) {
     let obj = { Page: id, EventPerPage: this.EventperPage }
     this.apiService.addPerson(obj, "api/GetEventDataForPage")
@@ -76,16 +60,16 @@ export class UserDashboardComponent implements OnInit {
           if (data.ArrayOfResponse.length > 0) {
             this.event = data.ArrayOfResponse;
             this.events = data.ArrayOfResponse;
+            this.indexofpage=(id-1)* this.EventperPage;
           }
-          console.log(this.event)
-          console.log(data)
-          // console.log();
-          
+          // console.log(this.event)
+          // console.log(data)
         },
         error => {
           console.log(error);
         });
   }
+  // redirect page click on buttun for view more
   btnview1(id: any) {
     this.viewGuard.viewPageFlag = true;
     this.apiService.eventId = id;
