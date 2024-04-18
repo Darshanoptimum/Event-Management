@@ -8,19 +8,19 @@ import { ApiService } from '../components/api.service';
   providedIn: 'root'
 })
 export class UserGuard implements CanActivate {
-  constructor(private router:Router){}
+  constructor(private router: Router) { }
 
-  public Userlogin:boolean=false;
+  public Userlogin: boolean = false;
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if (this.Userlogin) {
-        return true;
-     }
-      else {
-        this.router.navigate(["/login"]);
-        return false;
-     }
+    if (this.Userlogin) {
+      return true;
+    }
+    else {
+      this.router.navigate(["/login"]);
+      return false;
+    }
   }
 }

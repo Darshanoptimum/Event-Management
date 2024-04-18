@@ -18,32 +18,33 @@ const routes: Routes = [
   {
     path: "login", component: SignupComponent
   },
-  
   {
-    path:"admindashboard", component:AdminDashboardComponent,
-    canActivate: [AdminGuard]
-  },
-  { path: 'datechange', component: AdminHomePageComponent },
-  {
-    path:"userdashboard", component:UserDashboardComponent,
-    canActivate: [UserGuard]
+    path: "admindashboard", component: AdminDashboardComponent, canActivate: [AdminGuard]
   },
   {
-    path:"viewEvent", component:ViewEventComponent,canActivate: [VieweventGuard,UserGuard]
+    path: 'datechange', component: AdminHomePageComponent
   },
-  { path: '**', component: HomePageComponent },
+  {
+    path: "userdashboard", component: UserDashboardComponent, canActivate: [UserGuard]
+  },
+  {
+    path: "viewEvent", component: ViewEventComponent, canActivate: [VieweventGuard]
+  },
+  {
+    path: '**', component: HomePageComponent
+  },
 
 
-  ]
+]
 
 @NgModule({
   declarations: [],
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
-  
- }
+
+
+}

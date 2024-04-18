@@ -11,14 +11,22 @@ namespace Expenses_Management.Controllers
 {
     public class PaggingController : ApiController
     {
+        //  Name : Darshan
+        // Date : 12-04-2024
+        /// <summary>
+        /// Api for Pagging
+        /// </summary>
+        /// <param name="Admininfo"></param>
+        /// <returns></returns>
+        // this API return the count of published event
         [HttpPost]
         [Route("api/Eventcount")]
-        public HttpResponseMessage addPrice([FromBody] PageEntity Pagedata)
+        public HttpResponseMessage Eventcount([FromBody] PageEntity Pagedata)
         {
             SerializeResponse<PageEntity> response = new SerializeResponse<PageEntity>();
             try
             {
-                InsertLog.WriteErrrorLog("ActivityController => addPrice => insert ");
+                InsertLog.WriteErrrorLog("PaggingController => Eventcount => insert ");
                 PaggingHelper pagecount = new PaggingHelper();
                 //call addPriceOfEvent method for add activity price
                 if (ModelState.IsValid)
@@ -34,11 +42,12 @@ namespace Expenses_Management.Controllers
             }
             catch (Exception ex)
             {
-                InsertLog.WriteErrrorLog("UserController => RegisterUser => Exception " + ex.Message + ex.StackTrace);
+                InsertLog.WriteErrrorLog("PaggingController => Eventcount => Exception " + ex.Message + ex.StackTrace);
                 response.Message = ex.Message;
             }
             return Request.CreateResponse(HttpStatusCode.OK, response.ID);
         }
+        //This API rerurn the event data as per page number and per page event 
         [HttpPost]
         [Route("api/GetEventDataForPage")]
         public HttpResponseMessage GetEventDataForPage([FromBody] PageEntity Pagedata)
@@ -46,7 +55,7 @@ namespace Expenses_Management.Controllers
             SerializeResponse<EventEntity> response = new SerializeResponse<EventEntity>();
             try
             {
-                InsertLog.WriteErrrorLog("ActivityController => addPrice => insert ");
+                InsertLog.WriteErrrorLog("PaggingController => GetEventDataForPage => insert ");
                 PaggingHelper pagecount = new PaggingHelper();
                 //call addPriceOfEvent method for add activity price
                 if (ModelState.IsValid)
@@ -62,7 +71,7 @@ namespace Expenses_Management.Controllers
             }
             catch (Exception ex)
             {
-                InsertLog.WriteErrrorLog("UserController => RegisterUser => Exception " + ex.Message + ex.StackTrace);
+                InsertLog.WriteErrrorLog("PaggingController => GetEventDataForPage => Exception " + ex.Message + ex.StackTrace);
                 response.Message = ex.Message;
             }
             return Request.CreateResponse(HttpStatusCode.OK, response);

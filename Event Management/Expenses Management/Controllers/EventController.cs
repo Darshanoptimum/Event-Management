@@ -12,6 +12,13 @@ namespace Event_Management.Controllers
 {
     public class EventController : ApiController
     {
+        //  Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// Api for CRUD opration of Event
+        /// </summary>
+        /// <param name="Admininfo"></param>
+        /// <returns></returns>
         // API for insert Event into database
         [HttpPost]
         [Route("api/AddEvent")]

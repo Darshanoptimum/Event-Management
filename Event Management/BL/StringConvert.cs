@@ -11,6 +11,13 @@ namespace BL
 {
     public static class StringConvert
     {
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method convert base64 string into image and save into storage and return path
+        /// </summary>
+        /// <param name="Event"></param>
+        /// <returns></returns>
         // convert base64 string into image and save into storage and return path
         public static string imgToString(EventEntity Event)
         {
@@ -38,6 +45,14 @@ namespace BL
             }
             return path;
         }
+
+        //  Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method convert path into base64 string 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         // Convert path into base64 string 
         public static string StringToImage(string path)
         {

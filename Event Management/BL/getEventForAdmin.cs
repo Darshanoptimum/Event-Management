@@ -12,7 +12,14 @@ namespace BL
 {
     public class getEventForAdmin
     {
+        // Name : Darshan
+        // Date : 05-04-2024
         // get all event
+        /// <summary>
+        /// This method return all upcoming and post event foe admin dashboard
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> getEvent(String s)
         {
             InsertLog.WriteErrrorLog("getEventForAdmin => getEvent => Started");

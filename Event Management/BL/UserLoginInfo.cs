@@ -12,7 +12,14 @@ namespace BL
 {
     public class UserLoginInfo
     {
+        // Name : Darshan
+        // Date : 05-04-2024
         // user login validation
+        /// <summary>
+        /// This method validate user data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public SerializeResponse<UserEntity> userLogin(UserEntity user)
         {
             InsertLog.WriteErrrorLog("UserLoginInfo => userLogin => Started");

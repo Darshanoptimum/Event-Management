@@ -6,9 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
   pure: false 
 })
 export class ChangeDatePipe implements PipeTransform {
-
+  // this pipe convert date into "XX month XX day XX hour XX minute XX secound ago"
   transform(date: string, arg1: string,arg2: string): any {
-    debugger
     const Pdate=new Date();
     const Pastdate = new Date(date);
     const timediff = Pdate.getTime()-Pastdate.getTime();

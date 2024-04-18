@@ -12,7 +12,13 @@ namespace BL
 {
     public class insertUser
     {
-        // this method insert users data into database and response an user data with user id
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// this method insert users data into database and response an user data with user id
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public SerializeResponse<UserEntity> insertUserInfo(UserEntity user)
         {
             InsertLog.WriteErrrorLog("insertUser => insertUserInfo => Started");

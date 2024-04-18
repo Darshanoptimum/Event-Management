@@ -14,6 +14,14 @@ namespace BL
 {
     public class AdminLoginInfo
     {
+
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method validate admin data
+        /// </summary>
+        /// <param name="admin"></param>
+        /// <returns></returns>
         // Admin login validation
         public SerializeResponse<AdminEntity> adminLogin(AdminEntity admin)
         {

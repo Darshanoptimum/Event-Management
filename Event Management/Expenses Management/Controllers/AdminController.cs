@@ -11,6 +11,13 @@ namespace Expenses_Management.Controllers
 {
     public class AdminController : ApiController
     {
+        //  Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// Api for CRUD opration of Admin
+        /// </summary>
+        /// <param name="Admininfo"></param>
+        /// <returns></returns>
         //API for Admin login validation
         [HttpPost]
         [Route("api/AdminLogin")]

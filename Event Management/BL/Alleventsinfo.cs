@@ -13,6 +13,14 @@ namespace BL
 {
     public class Alleventsinfo
     {
+
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method published the event using given Event Id
+        /// </summary>
+        /// <param name="eventsinfo"></param>
+        /// <returns></returns>
         // get publish event 
         public SerializeResponse<EventActivityEntity> publishevents(EventActivityEntity eventsinfo)
         {

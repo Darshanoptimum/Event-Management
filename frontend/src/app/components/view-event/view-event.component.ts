@@ -1,5 +1,4 @@
 import { Component, ElementRef, Input } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 import { ApiService } from '../api.service';
 import { EventInfo } from '../eventinfo';
 
@@ -15,12 +14,14 @@ export class ViewEventComponent {
   EendDate?:string;
   Eimage?:string;
   activityflag=false;
-  constructor(private fb: FormBuilder,private apiService: ApiService,private elementRef:ElementRef){}
   eventInfos?: EventInfo[];
   eventInfo = new EventInfo();
+
+  constructor(private apiService: ApiService){}
+
   ngOnInit(): void {
     this.eventInfo.Id = this.apiService.eventId;
-    // call api for 
+    // call api for get Event info
     this.apiService.addPerson(this.eventInfo,"api/AllEventsinfo")
       .subscribe(
         data => {
@@ -35,6 +36,7 @@ export class ViewEventComponent {
           console.log(this.eventInfos)
         }, 
         error => {
+          alert("Error")
           console.log(error);
     });
   }

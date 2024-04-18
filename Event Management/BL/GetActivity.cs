@@ -12,7 +12,15 @@ namespace BL
 {
     public class GetActivity
     {
+
+        // Name : Darshan
+        // Date : 05-04-2024
         // get all activity of event
+        /// <summary>
+        /// This method get All activity of spesific Event using event Id
+        /// </summary>
+        /// <param name="activity"></param>
+        /// <returns></returns>
         public SerializeResponse<ActivityEntity> GetActivityInfo(ActivityEntity activity)
         {
             InsertLog.WriteErrrorLog("GetActivity => GetActivityInfo => Started");

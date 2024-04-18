@@ -12,6 +12,14 @@ namespace BL
 {
     public class AddPriceOfEvent
     {
+
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method add Price OF Activity in database
+        /// </summary>
+        /// <param name="activityInfo"></param>
+        /// <returns></returns>
         // add price of activity into database
         public SerializeResponse<ActivityEntity> addPriceOfEvent(ActivityEntity activityInfo)
         {

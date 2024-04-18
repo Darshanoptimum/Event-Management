@@ -7,7 +7,10 @@ import { environment } from '../environments/environment';
 export class ApiService {
   public emailString?:String;
   public eventId?:any;
+  public pageNumber = 1;
+
   constructor(private http: HttpClient) {  }
+ 
   addPerson(user:any,endPoint:string): Observable<any> {
     const headers = { 'content-type': 'application/json'}  
     const body=JSON.stringify(user);
@@ -15,7 +18,6 @@ export class ApiService {
   }
 
 
-  public pageNumber = 1;
 
  
 } 

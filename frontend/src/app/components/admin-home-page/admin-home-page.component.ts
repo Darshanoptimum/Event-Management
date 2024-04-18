@@ -2,6 +2,7 @@ import { Component, ElementRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ApiService } from '../api.service';
 import { Event } from '../event';
+import { observable } from 'rxjs';
 
 @Component({
   selector: 'app-admin-home-page',
@@ -9,26 +10,24 @@ import { Event } from '../event';
   styleUrls: ['./admin-home-page.component.css']
 })
 export class AdminHomePageComponent {
-  constructor(private fb: FormBuilder,private apiService: ApiService,private elementRef:ElementRef){}
+  constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef) { }
+  events?: Event[]
+  event: any;
 
-  events? : Event[]
-  event : any;
   ngOnInit(): void {
-    
-    this.apiService.addPerson(this.event,"api/publishedEvent")
+    // call api for get published event
+    this.apiService.addPerson(this.event, "api/publishedEvent")
       .subscribe(
         data => {
-          if(data.ArrayOfResponse.length>0){
-            this.events=data.ArrayOfResponse;
-            this.events=data.ArrayOfResponse;
+          if (data.ArrayOfResponse.length > 0) {
+            this.events = data.ArrayOfResponse;
+            this.events = data.ArrayOfResponse;
           }
           console.log(this.events)
           console.log(data)
-        }, 
+        },
         error => {
           console.log(error);
-    });
+        });
   }
- 
-  
 }

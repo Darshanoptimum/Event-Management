@@ -14,20 +14,23 @@ import { UserGuard } from 'src/app/Guard/user.guard';
 })
 export class SignupComponent implements OnInit {
 
-  mail?:String;
-
-
-  showFirst:boolean=true;
-  
-  
-  toggleSections(){
-    this.showFirst=!this.showFirst;
-  }
-
+  mail?: String;
+  showFirst: boolean = true;
   myForm!: FormGroup;
   myForm1!: any;
-  constructor(private fb: FormBuilder,private adminGuard:AdminGuard,private userGuard:UserGuard,private apiService: ApiService,private elementRef:ElementRef,private router:Router) { }
-  
+  ResponseLogin?: string;
+  ResponseRegister?: string;
+  users?: User[];
+  user = new User();
+  data: any;
+
+  constructor(private fb: FormBuilder, private adminGuard: AdminGuard, private userGuard: UserGuard, private apiService: ApiService, private elementRef: ElementRef, private router: Router) { }
+
+  // change the signin and signup page
+  toggleSections() {
+    this.showFirst = !this.showFirst;
+  }
+
   ngOnInit() {
     this.myForm = this.fb.group({
       name: ['', Validators.required],
@@ -43,90 +46,71 @@ export class SignupComponent implements OnInit {
       LoginPassword: ['', [Validators.required, Validators.minLength(8)]],
     });
   }
-  ResponseLogin?:string;
-  ResponseRegister?:string;
-  onSubmit1(form: FormGroup) {
-    console.log('Valid?', form.valid); // true or false
-    console.log('LoginName', form.value.LoginName);
-    console.log('LoginEmail', form.value.LoginEmail);
-    console.log('LoginPassword', form.value.LoginPassword);
-    console.log('LoginType', form.value.LoginType);
-    this.user.Name=form.value.LoginName;
-    this.user.Email=form.value.LoginEmail;
-    this.user.Password=form.value.LoginPassword;
-    if(form.valid){
-    if(form.value.LoginType=="Admin"){
-      this.apiService.addPerson(this.user,"api/AdminLogin")
-    .subscribe(
-      data => {
-        console.log(data);
-        this.ResponseLogin=data;
-        // var d1 = this.elementRef.nativeElement.querySelector('#Message');
-        // d1.innerHTML="";
-        // d1.insertAdjacentHTML('beforeend', '<div class="two"><b>'+data+'</b></div>');
-        if(data=="Valid Admin"){
-        this.router.navigate(["/admindashboard"])
-          this.adminGuard.Adminlogin=true;
-        }
-      }, 
-      error => {
-        console.log(error);
-      });
-    }
-    if(form.value.LoginType=="User"){
-      this.apiService.addPerson(this.user,"api/UserLogin")
-    .subscribe(
-      data => {
-        console.log(data);
-        this.ResponseLogin=data;
-        // var d1 = this.elementRef.nativeElement.querySelector('#Message');
-        // d1.innerHTML="";
-        // d1.insertAdjacentHTML('beforeend', '<div class="two"><b>'+data+'</b></div>');
-        if(data=="Valid User"){
-          this.router.navigate(["/userdashboard"])
-          this.userGuard.Userlogin=true;
-        }
-      }, 
-      error => {
-        console.log(error);
-      });
-    }
-    }else{
-      alert("Enter valid value")
-    }
-  }
-  users?:User[];
-  user = new User();
-  data: any;
-  onSubmit2(form: FormGroup) {
-    console.log('Valid?', form.valid); // true or false
-    console.log('name', form.value.name);
-    console.log('email', form.value.email);
-    console.log('password', form.value.password);
-    console.log('mobile', form.value.mobile);
 
-    this.user.Name=form.value.name;
-    this.user.Email=form.value.email;
-    this.user.Password=form.value.password;
-    this.user.MobileNumber=form.value.mobile;
-    if(form.valid){
-    this.apiService.addPerson(this.user,"api/RegisterUser")
-    .subscribe(
-      data => {
-        console.log(data);
-        this.ResponseRegister=data;
-        // var d1 = this.elementRef.nativeElement.querySelector('#errorMessage');
-        // d1.innerHTML="";
-        // d1.insertAdjacentHTML('beforeend', '<div class="two"><b>'+data+'</b></div>');
-        
-      }, 
-      error => {
-        console.log(error);
-      }); 
-    }
-    else{
+  onSubmit1(form: FormGroup) {
+    this.user.Name = form.value.LoginName;
+    this.user.Email = form.value.LoginEmail;
+    this.user.Password = form.value.LoginPassword;
+    if (form.valid) {
+      if (form.value.LoginType == "Admin") {
+        // call api for Admin validation
+        this.apiService.addPerson(this.user, "api/AdminLogin")
+          .subscribe(
+            data => {
+              console.log(data);
+              this.ResponseLogin = data;
+              if (data == "Valid Admin") {
+                this.router.navigate(["/admindashboard"])
+                this.adminGuard.Adminlogin = true;
+              }
+            },
+            error => {
+              alert("Error")
+              console.log(error);
+            });
+      }
+      if (form.value.LoginType == "User") {
+        // call api for user validation
+        this.apiService.addPerson(this.user, "api/UserLogin")
+          .subscribe(
+            data => {
+              console.log(data);
+              this.ResponseLogin = data;
+              if (data == "Valid User") {
+                this.router.navigate(["/userdashboard"])
+                this.userGuard.Userlogin = true;
+              }
+            },
+            error => {
+              alert("Error")
+              console.log(error);
+            });
+      }
+    } else {
       alert("Enter valid value")
     }
   }
-  
+
+  onSubmit2(form: FormGroup) {
+    this.user.Name = form.value.name;
+    this.user.Email = form.value.email;
+    this.user.Password = form.value.password;
+    this.user.MobileNumber = form.value.mobile;
+    if (form.valid) {
+      // call api for user registration
+      this.apiService.addPerson(this.user, "api/RegisterUser")
+        .subscribe(
+          data => {
+            console.log(data);
+            this.ResponseRegister = data;
+          },
+          error => {
+            console.log(error);
+            alert("Error")
+          });
+    }
+    else {
+      alert("Enter valid value")
+    }
+  }
 }

@@ -11,6 +11,14 @@ namespace Expenses_Management.Controllers
 {
     public class ActivityController : ApiController
     {
+        //  Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// Api for CRUD opration of Activity
+        /// </summary>
+        /// <param name="activityInfo"></param>
+        /// <returns></returns>
+        /// 
         //API for add activity into database
         [HttpPost]
         [Route("api/addActivity")]

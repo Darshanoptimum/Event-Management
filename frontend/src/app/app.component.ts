@@ -8,6 +8,5 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent {
   title = 'Event';
-  
 }
  

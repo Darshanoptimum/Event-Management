@@ -11,6 +11,13 @@ namespace Event_Management.Controllers
 {
     public class UserController : ApiController
     {
+        //  Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// Api for CRUD opration of User
+        /// </summary>
+        /// <param name="Admininfo"></param>
+        /// <returns></returns>
         // API for register user
         [HttpPost]
         [Route("api/RegisterUser")]

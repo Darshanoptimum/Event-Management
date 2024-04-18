@@ -12,7 +12,13 @@ namespace BL
 {
     public class GetDateOfEvent
     {
-        // get date of e
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method return Event start date and end date specific event using given event id
+        /// </summary>
+        /// <param name="eventInfo"></param>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> DateOfEvent(EventEntity eventInfo)
         {
             InsertLog.WriteErrrorLog("GetDateOfEvent => DateOfEvent => Started");

@@ -13,6 +13,12 @@ namespace BL
     // get published event
     public class publishedEvent
     {
+        // Name : Darshan
+        // Date : 05-04-2024
+        /// <summary>
+        /// This method return the publish event data
+        /// </summary>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> publishevents()
         {
             InsertLog.WriteErrrorLog("publishedEvent => PublishEvent => Started");

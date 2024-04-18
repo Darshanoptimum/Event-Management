@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   pure: false 
 })
 export class AfterdatePipe implements PipeTransform {
-
+  // this pipe conver date into "start in XX month XX day"
   transform(date: string): any {
     const Pdate=new Date();
     const Pastdate = new Date(date);

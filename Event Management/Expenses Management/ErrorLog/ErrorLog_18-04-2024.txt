@@ -1,0 +1,666 @@
+------------------------------------------18-04-2024 06:10:27 PM------------------------------------------
+AdminController => AdminLogin => insert Model.AdminEntity
+------------------------------------------18-04-2024 06:10:27 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:10:32 PM------------------------------------------
+UserController => publishedEvent => strat
+------------------------------------------18-04-2024 06:10:32 PM------------------------------------------
+publishedEvent => PublishEvent => Started
+------------------------------------------18-04-2024 06:17:46 PM------------------------------------------
+EventController => AddEvent => insert Model.EventEntity
+------------------------------------------18-04-2024 06:17:46 PM------------------------------------------
+AddEventInfo => insertEvent => Started
+------------------------------------------18-04-2024 06:17:52 PM------------------------------------------
+EventController => getActiveEvent => insert 
+------------------------------------------18-04-2024 06:17:52 PM------------------------------------------
+gertActiveEvent => gertActiveEventInfo => Started
+------------------------------------------18-04-2024 06:17:55 PM------------------------------------------
+EventController => getEventDate => insert 
+------------------------------------------18-04-2024 06:17:55 PM------------------------------------------
+GetDateOfEvent => DateOfEvent => Started
+------------------------------------------18-04-2024 06:18:42 PM------------------------------------------
+ActivityController => addActivity => insert
+------------------------------------------18-04-2024 06:18:42 PM------------------------------------------
+InsertActivity => InsertActivityInfo => Started
+------------------------------------------18-04-2024 06:18:46 PM------------------------------------------
+EventController => getActiveEvent => insert 
+------------------------------------------18-04-2024 06:18:46 PM------------------------------------------
+gertActiveEvent => gertActiveEventInfo => Started
+------------------------------------------18-04-2024 06:18:48 PM------------------------------------------
+ActivityController => getActivity => insert 
+------------------------------------------18-04-2024 06:18:48 PM------------------------------------------
+GetActivity => GetActivityInfo => Started
+------------------------------------------18-04-2024 06:18:58 PM------------------------------------------
+ActivityController => addPrice => insert 
+------------------------------------------18-04-2024 06:18:58 PM------------------------------------------
+AddPriceOfEvent => addPriceOfEvent => Started
+------------------------------------------18-04-2024 06:19:03 PM------------------------------------------
+EventController => getActiveEvent => insert 
+------------------------------------------18-04-2024 06:19:03 PM------------------------------------------
+gertActiveEvent => gertActiveEventInfo => Started
+------------------------------------------18-04-2024 06:19:05 PM------------------------------------------
+EventController => PublishEvent => insert 
+------------------------------------------18-04-2024 06:19:05 PM------------------------------------------
+PublishEvent => publish => Started
+------------------------------------------18-04-2024 06:19:17 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:19:17 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:19:18 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:19:18 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:19:18 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:19:18 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:19:20 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:19:20 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:19:21 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:19:21 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:22:15 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:22:15 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:22:15 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:22:15 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:17 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:19 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:19 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:20 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:20 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:21 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:21 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:22 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:22 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:23 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:23 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:24 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:24 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:26 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:26 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:28 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:28 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:29 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:29 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:30 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:30 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:31 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:31 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:32 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:32 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:33 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:23:33 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:23:36 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:23:36 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:36 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:36 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:23:39 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:23:39 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:25:45 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:25:45 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:25:46 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:25:46 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:25:46 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:25:46 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:25:48 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:25:48 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:25:58 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:25:58 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:25:58 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:25:59 PM------------------------------------------
+PaggingController => Eventcount => Exception The process cannot access the file 'C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\ErrorLog\ErrorLog_18-04-2024.txt' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at BL.InsertLog.WriteErrrorLog(String exception) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\InsertLog.cs:line 23
+   at BL.PaggingHelper.pageCount(PageEntity Page) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\BL\PaggingHelper.cs:line 24
+   at Expenses_Management.Controllers.PaggingController.Eventcount(PageEntity Pagedata) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\Controllers\PaggingController.cs:line 27
+------------------------------------------18-04-2024 06:25:59 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:25:59 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:26:01 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:26:01 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:01 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:01 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:02 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:26:02 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:50 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:53 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:53 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:53 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:53 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:54 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:54 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:54 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:54 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:55 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:26:55 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:26:58 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:26:58 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:27:03 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:27:03 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:03 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:27:03 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:04 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:27:04 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:27:07 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:27:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:07 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:27:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:09 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:27:09 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:10 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:27:10 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:27:12 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:27:12 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:12 PM------------------------------------------
+PaggingController => Eventcount => Exception The process cannot access the file 'C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\ErrorLog\ErrorLog_18-04-2024.txt' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at BL.InsertLog.WriteErrrorLog(String exception) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\InsertLog.cs:line 23
+   at Expenses_Management.Controllers.PaggingController.Eventcount(PageEntity Pagedata) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\Controllers\PaggingController.cs:line 22
+------------------------------------------18-04-2024 06:27:25 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:27:25 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:27:26 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:27:26 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:27:26 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:27:26 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:15 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:29:15 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:15 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:15 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:28 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:28 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:31 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:31 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:37 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:29:37 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:29:39 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:29:39 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:39 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:39 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:43 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:43 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:44 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:44 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:47 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:47 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:48 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:48 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:52 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:52 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:29:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:29:54 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:29:54 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:09 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:32:09 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:32:11 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:32:11 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:11 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:11 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:12 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:12 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:14 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:32:14 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:32:26 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:26 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:26 PM------------------------------------------
+PaggingController => Eventcount => Exception The process cannot access the file 'C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\ErrorLog\ErrorLog_18-04-2024.txt' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at BL.InsertLog.WriteErrrorLog(String exception) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\LIBRARY\InsertLog.cs:line 23
+   at Expenses_Management.Controllers.PaggingController.Eventcount(PageEntity Pagedata) in C:\Users\Priya Sutariya\Desktop\Darshan Vaghani\Week 10\Event Management\Expenses Management\Controllers\PaggingController.cs:line 22
+------------------------------------------18-04-2024 06:32:28 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:32:28 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:32:29 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:32:29 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:29 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:29 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:30 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:32:30 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:32:31 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:32:31 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:32:31 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:32:31 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:33:04 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:06 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:33:06 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:33:10 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:33:10 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:10 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:33:10 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:33:12 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:33:12 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:34:52 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:34:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:34:53 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:34:53 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:34:53 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:34:53 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:34:54 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:34:54 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:34:56 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:34:56 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:34:56 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:34:56 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:34:59 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:34:59 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:35:00 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:35:00 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:35:00 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:35:00 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:34 PM------------------------------------------
+UserController => UserLogin => insert Model.UserEntity
+------------------------------------------18-04-2024 06:36:34 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:35 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:36:35 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:35 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:35 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:37 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:36:37 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:36:41 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:36:41 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:41 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:41 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:43 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:36:43 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:36:45 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:36:45 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:45 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:45 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:46 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:46 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:48 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:48 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:49 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:49 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:50 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:50 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:53 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:53 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:55 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:55 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:36:56 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:36:56 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:01 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:01 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:01 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:01 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:02 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:02 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:02 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:02 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:03 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:03 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:04 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:04 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:04 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:04 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:05 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:05 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:06 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:06 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:06 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:06 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:07 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:07 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:07 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:08 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:08 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:37:08 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:37:08 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:40:50 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:40:50 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:40:52 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:40:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:40:52 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:40:52 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:40:54 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:40:54 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:41:10 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:41:10 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:10 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:10 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:12 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:41:12 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:41:13 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:41:13 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:13 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:13 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:14 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:41:14 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:41:16 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:41:16 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:16 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:16 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:17 PM------------------------------------------
+UserController => AllEventsinfo => strat 
+------------------------------------------18-04-2024 06:41:17 PM------------------------------------------
+Alleventsinfo => publishevents => Started
+------------------------------------------18-04-2024 06:41:19 PM------------------------------------------
+PaggingController => Eventcount => insert 
+------------------------------------------18-04-2024 06:41:19 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:19 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:19 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:23 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:23 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:25 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:25 PM------------------------------------------
+UserLoginInfo => userLogin => Started
+------------------------------------------18-04-2024 06:41:43 PM------------------------------------------
+PaggingController => GetEventDataForPage => insert 
+------------------------------------------18-04-2024 06:41:43 PM------------------------------------------
+UserLoginInfo => userLogin => Started

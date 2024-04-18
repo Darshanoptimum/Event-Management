@@ -12,7 +12,13 @@ namespace BL
 {
     public class GetAllEvent
     {
+        // Name : Darshan
+        // Date : 05-04-2024
         // get all non publish event
+        /// <summary>
+        /// This method return the non publish event
+        /// </summary>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> getAllEvent()
         {
             InsertLog.WriteErrrorLog("GetAllEvent => getAllEvent => Started");

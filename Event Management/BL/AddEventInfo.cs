@@ -12,7 +12,16 @@ namespace BL
 {
     public class AddEventInfo
     {
+
+        //Name : Darshan
+        //Date : 05-04-2024
+
         //insert event into database
+        /// <summary>
+        /// This method add Event data into data base 
+        /// </summary>
+        /// <param name="Event"></param>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> insertEvent(EventEntity Event)
         {
             InsertLog.WriteErrrorLog("AddEventInfo => insertEvent => Started");

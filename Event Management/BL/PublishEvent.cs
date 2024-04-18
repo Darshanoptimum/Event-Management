@@ -12,7 +12,14 @@ namespace BL
 {
     public class PublishEvent
     {
+        // Name : Darshan
+        // Date : 05-04-2024
         //publish event
+        /// <summary>
+        /// This method pulish the specific event using given Event ID
+        /// </summary>
+        /// <param name="eventInfo"></param>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> publish(EventEntity eventInfo)
         {
             InsertLog.WriteErrrorLog("PublishEvent => publish => Started");

@@ -12,6 +12,13 @@ namespace BL
 {
     public class PaggingHelper
     {
+        // Name : Darshan
+        // Date : 12-04-2024
+        /// <summary>
+        /// This method return count of published event 
+        /// </summary>
+        /// <param name="Page"></param>
+        /// <returns></returns>
         public SerializeResponse<PageEntity> pageCount(PageEntity Page)
         {
             InsertLog.WriteErrrorLog("UserLoginInfo => userLogin => Started");
@@ -43,6 +50,13 @@ namespace BL
             }
             return objResponsemessage;
         }
+        /// <summary>
+        /// Name : Darshan
+        /// Date : 12-04-2024
+        /// This method return the publish event data as per pagenumber and event per page
+        /// </summary>
+        /// <param name="Page"></param>
+        /// <returns></returns>
         public SerializeResponse<EventEntity> PageData(PageEntity Page)
         {
             InsertLog.WriteErrrorLog("UserLoginInfo => userLogin => Started");

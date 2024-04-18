@@ -12,11 +12,11 @@ import { UserGuard } from 'src/app/Guard/user.guard';
 })
 export class NavComponent {
   @Input() public isUserLoggedIn?: boolean;
+  
   constructor(private apiService: ApiService,private router:Router,private adminGuard:AdminGuard,private userGuard:UserGuard) { }
+  
   logout(){
-    debugger
     this.adminGuard.Adminlogin=false;
     this.userGuard.Userlogin=false;
-    
   }
 }

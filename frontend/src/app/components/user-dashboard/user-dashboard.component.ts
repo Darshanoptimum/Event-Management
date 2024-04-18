@@ -11,31 +11,33 @@ import { VieweventGuard } from 'src/app/Guard/viewevent.guard';
   styleUrls: ['./user-dashboard.component.css']
 })
 export class UserDashboardComponent implements OnInit {
-  constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef, private router: Router, private viewGuard: VieweventGuard) { }
   events?: Event[];
   event = new Event();
   showFirst: boolean = true;
   page: any;
   EventperPage = 8;
   buttonpg: any;
-  indexofpage!:number;
+  indexofpage!: number;
+
+  constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef, private router: Router, private viewGuard: VieweventGuard) { }
 
   ngOnInit(): void {
-    // call api for first page data
     setTimeout(() => {
       let obj = { Page: 1, EventPerPage: this.EventperPage }
+      // call api for first page data
       this.apiService.addPerson(obj, "api/GetEventDataForPage")
         .subscribe(
           data => {
             if (data.ArrayOfResponse.length > 0) {
               this.event = data.ArrayOfResponse;
               this.events = data.ArrayOfResponse;
-              this.indexofpage=0;
+              this.indexofpage = 0;
             }
             // console.log(this.event)
             // console.log(data.ArrayOfResponse.Startdate)
           },
           error => {
+            alert("Error")
             console.log(error);
           });
     }, 10);
@@ -60,12 +62,13 @@ export class UserDashboardComponent implements OnInit {
           if (data.ArrayOfResponse.length > 0) {
             this.event = data.ArrayOfResponse;
             this.events = data.ArrayOfResponse;
-            this.indexofpage=(id-1)* this.EventperPage;
+            this.indexofpage = (id - 1) * this.EventperPage;
           }
           // console.log(this.event)
           // console.log(data)
         },
         error => {
+          alert("Error")
           console.log(error);
         });
   }
