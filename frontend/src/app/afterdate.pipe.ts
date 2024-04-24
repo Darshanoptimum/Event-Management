@@ -24,7 +24,10 @@ export class AfterdatePipe implements PipeTransform {
     
     if(month==0){
       return day + " day "
+    }else if(month<0){
+      return "On going"
     }
+    
     return month + " month " + day + " day "
   }
 

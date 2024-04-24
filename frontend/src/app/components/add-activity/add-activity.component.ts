@@ -30,7 +30,7 @@ export class AddActivityComponent implements OnInit {
       Startdate: ['', [Validators.required]],
       Enddate: ['', [Validators.required]]
     });
-
+    
     //call api for get all Non publish Event
     this.apiService.addPerson(this.event, "api/getActiveEvent")
       .subscribe(
@@ -51,7 +51,7 @@ export class AddActivityComponent implements OnInit {
     this.activity.ActivityName = form.value.ActivityName;
     this.activity.ActivityStartDate = form.value.Startdate;
     this.activity.ActivityEndDate = form.value.Enddate;
-
+    console.log(form.value.Startdate);
     if (form.valid) {
       // call api for add activity
       this.apiService.addPerson(this.activity, "api/addActivity")

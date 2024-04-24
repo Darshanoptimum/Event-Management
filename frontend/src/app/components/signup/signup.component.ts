@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AdminGuard } from 'src/app/Guard/admin.guard';
 import { UserGuard } from 'src/app/Guard/user.guard';
+import { Subscription } from 'rxjs';
+import { GoogleLoginProvider, SocialAuthService, SocialUser } from 'angularx-social-login';
 
 @Component({
   selector: 'app-signup',
@@ -23,8 +25,12 @@ export class SignupComponent implements OnInit {
   users?: User[];
   user = new User();
   data: any;
+  public day = new Date().getHours();
+  public hour = 0;
+  user1?:SocialUser;
+  
 
-  constructor(private fb: FormBuilder, private adminGuard: AdminGuard, private userGuard: UserGuard, private apiService: ApiService, private elementRef: ElementRef, private router: Router) { }
+  constructor(private fb: FormBuilder,private socialAuthService: SocialAuthService, private adminGuard: AdminGuard, private userGuard: UserGuard, private apiService: ApiService, private elementRef: ElementRef, private router: Router) { }
 
   // change the signin and signup page
   toggleSections() {
@@ -32,6 +38,18 @@ export class SignupComponent implements OnInit {
   }
 
   ngOnInit() {
+    if(this.day<12 && this.day>5){
+      this.hour = 1
+    }
+    else if (this.day<18 && this.day>12) {
+      this.hour = 2
+    } 
+    else if (this.day<20 && this.day>18) {
+      this.hour = 3
+    } 
+    
+    console.log(this.day);
+    
     this.myForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -45,6 +63,7 @@ export class SignupComponent implements OnInit {
       LoginEmail: ['', [Validators.required, Validators.email]],
       LoginPassword: ['', [Validators.required, Validators.minLength(8)]],
     });
+    
   }
 
   onSubmit1(form: FormGroup) {
@@ -113,4 +132,18 @@ export class SignupComponent implements OnInit {
       alert("Enter valid value")
     }
   }
+  authSubscription!: Subscription;
+
+  ngOnDestroy(): void {
+    this.authSubscription.unsubscribe();
+  }
+
+  loginWithGoogle(): void {
+    console.log("hey");
+    
+    this.socialAuthService?.signIn(GoogleLoginProvider.PROVIDER_ID)
+      .then(user=>{this.user1=user}).catch(error=>{alert(error)});
+  }
+
+  
 }

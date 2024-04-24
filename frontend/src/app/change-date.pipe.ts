@@ -11,6 +11,7 @@ export class ChangeDatePipe implements PipeTransform {
     const Pdate=new Date();
     const Pastdate = new Date(date);
     const timediff = Pdate.getTime()-Pastdate.getTime();
+    // const timediff = Pastdate.getTime()-Pdate.getTime();
     const Secound1 = Math.floor(timediff/1000);
     const Minute1 = Math.floor(Secound1/60);
     const Hour1 = Math.floor(Minute1/60);

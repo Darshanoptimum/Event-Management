@@ -19,6 +19,8 @@ export class AddPriceComponent {
   activitys2?: Activity[];
   activity2 = new Activity();
   ResponseMessage?: string;
+  message=false;
+  selectflag=false;
 
   constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef) { }
 
@@ -51,6 +53,7 @@ export class AddPriceComponent {
 
   // Addmin select the event after that this method get Activity of selected event
   onFileChange(form: FormGroup) {
+    this.selectflag=true;
     this.activity.EventId = form.value.EventId;
     this.apiService.addPerson(this.activity, "api/getActivity")
       .subscribe(
@@ -58,10 +61,11 @@ export class AddPriceComponent {
           if (data.ArrayOfResponse.length > 0) {
             this.activitys = data.ArrayOfResponse;
             console.log(this.activitys)
+            this.message=true
           } else {
             this.activitys = [];
+            this.message=false
           }
-
         },
         error => {
           console.log(error);

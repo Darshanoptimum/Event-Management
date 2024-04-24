@@ -1,0 +1,92 @@
+<div class="text-center mt-5">
+    <h3>2024</h3>
+</div>
+
+    <div class="container w-50 text-center mt-5">
+        <div class="container">
+            <div class="row border-bottom-0 border-primary">
+                <div class="col border border-primary" (mouseenter)="Event('January')" (mouseleave)="Event2('January')">
+                    <p class="mt-4" (click)="clickOnmonth('January')">January</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('February')"
+                    (mouseleave)="Event2('February')">
+                    <p class="mt-4" (click)="clickOnmonth('February')">February</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('March')" (mouseleave)="Event2('March')">
+                    <p class="mt-4" (click)="clickOnmonth('March')">March</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row border-bottom-0 border-top-0 border-primary">
+                <div class="col border border-primary" (mouseenter)="Event('April')" (mouseleave)="Event2('April')"
+                    >
+                    <p class="mt-4" (click)="clickOnmonth('April')">April</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('May')" (mouseleave)="Event2('May')">
+                    <p class="mt-4" (click)="clickOnmonth('May')">May</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('June')" (mouseleave)="Event2('June')">
+                    <p class="mt-4" (click)="clickOnmonth('June')">June</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row border-bottom-0 border-top-0 border-primary">
+                <div class="col border border-primary" (mouseenter)="Event('July')" (mouseleave)="Event2('July')">
+                    <p class="mt-4" (click)="clickOnmonth('July')">July</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('August')" (mouseleave)="Event2('August')">
+                    <p class="mt-4" (click)="clickOnmonth('August')">August</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('September')"
+                    (mouseleave)="Event2('September')">
+                    <p class="mt-4" (click)="clickOnmonth('September')">September</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row border-top-0 border-primary">
+                <div class="col border border-primary" (mouseenter)="Event('October')" (mouseleave)="Event2('October')">
+                    <p class="mt-4" (click)="clickOnmonth('October')">October</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('November')"
+                    (mouseleave)="Event2('November')">
+                    <p class="mt-4" (click)="clickOnmonth('November')">November</p>
+                </div>
+                <div class="col border border-primary" (mouseenter)="Event('December')"
+                    (mouseleave)="Event2('December')">
+                    <p class="mt-4" (click)="clickOnmonth('December')">December</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="">
+        <div class="container d-flex justify-content-center mt-5" *ngIf="flag && event_count"
+            style="position:relative;">
+            <div class="arrow">
+                <div class="outer"></div>
+                <div class="inner"></div>
+            </div>
+            <div class="message-body">
+                <div>
+                    <p class="text-success">There are <span class="text-danger">{{event_count}}</span> events in this
+                        Month, For Show Event click on <span class="text-danger">{{hoverMonth}}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center mt-5" *ngIf="flag && !event_count">
+            <div class="arrow">
+                <div class="outer"></div>
+                <div class="inner"></div>
+            </div>
+            <div class="message-body">
+                <div *ngIf="flag && !event_count">
+                    <p class="text-success"><span class="text-danger">There are no events</span> </p>
+                </div>
+            </div>
+        </div>
+    </div>

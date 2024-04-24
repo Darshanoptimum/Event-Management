@@ -13,8 +13,11 @@ export class AdminHomePageComponent {
   constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef) { }
   events?: Event[]
   event: any;
+  myDate:any;
 
   ngOnInit(): void {
+    debugger
+    setInterval(() => {},1000);
     // call api for get published event
     this.apiService.addPerson(this.event, "api/publishedEvent")
       .subscribe(
@@ -30,4 +33,5 @@ export class AdminHomePageComponent {
           console.log(error);
         });
   }
+  
 }

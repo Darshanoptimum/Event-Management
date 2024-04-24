@@ -148,5 +148,35 @@ namespace Event_Management.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.OK, response);
         }
+        // API for Get monthVise Events
+        [HttpPost]
+        [Route("api/GetMonthViseEvent")]
+        public HttpResponseMessage GetMonthViseEvent([FromBody] MonthEntity monthdata)
+        {
+            SerializeResponse<MonthEntity> response = new SerializeResponse<MonthEntity>();
+            try
+            {
+                InsertLog.WriteErrrorLog("UserController => AllEventsinfo => strat ");
+                MonthViseEvent monthViseEvent = new MonthViseEvent();
+                //call publishevents method for  Get Events 
+                if (ModelState.IsValid)
+                {
+                    response = monthViseEvent.getAllEvent(monthdata);
+                }
+                else
+                {
+                    response.Message = "Values are not valid";
+                    // If Model data is not valid then send bad request as response
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, response);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                InsertLog.WriteErrrorLog("UserController => AllEventsinfo => Exception " + ex.Message + ex.StackTrace);
+                response.Message = ex.Message;
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, response);
+        }
     }
 }

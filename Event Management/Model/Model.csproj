@@ -47,6 +47,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EventActivityEntity.cs" />
     <Compile Include="EventEntity.cs" />
+    <Compile Include="MonthEntity.cs" />
     <Compile Include="PageEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserEntity.cs" />

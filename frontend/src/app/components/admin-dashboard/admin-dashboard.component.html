@@ -1,33 +1,35 @@
 <app-nav [isUserLoggedIn]="true"></app-nav>
 
-  
 
-<div class="box">
-  <div class="left-side">
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <button type="button" class="btn mt-3 text-white" (click)="btn1()">Add Event</button>
-      </li>
-      <li>
-        <button type="button" class="btn mt-3 text-white" (click)="btn2()">Add Activity</button>
-      </li>
-      <li>
-        <button type="button" class="btn mt-3 text-white" (click)="btn3()">Add Price</button>
-      </li>
-      <li>
-        <button type="button" class="btn mt-3 text-white" (click)="btn4()">Publish Event</button>
-      </li>
-    </ul>
+
+  <div class="box">
+    <div class="left-side">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <button type="button" class="btn mt-3 text-white" (click)="btn1()">Add Event</button>
+        </li>
+        <li>
+          <button type="button" class="btn mt-3 text-white" (click)="btn2()">Add Activity</button>
+        </li>
+        <li>
+          <button type="button" class="btn mt-3 text-white" (click)="btn3()">Add Price</button>
+        </li>
+        <li>
+          <button type="button" class="btn mt-3 text-white" (click)="btn4()">Publish Event</button>
+        </li>
+      </ul>
+    </div> <div class="item"></div>
+
+    <div class="right-side">
+      <div *ngIf="this.eventService.homeflag"><app-admin-home-page></app-admin-home-page></div>
+      <div *ngIf="this.eventService.eventflag"><app-add-event></app-add-event></div>
+      <div *ngIf="this.eventService.activityflag"><app-add-activity></app-add-activity></div>
+      <div *ngIf="this.eventService.priceflag"><app-add-price></app-add-price></div>
+      <div *ngIf="this.eventService.publishflag"><app-publish-event></app-publish-event></div>
+    </div>
   </div>
 
-  <div class="right-side">
-    <div *ngIf="this.eventService.homeflag"><app-admin-home-page></app-admin-home-page></div>
-    <div *ngIf="this.eventService.eventflag"><app-add-event></app-add-event></div>
-    <div *ngIf="this.eventService.activityflag"><app-add-activity></app-add-activity></div>
-    <div *ngIf="this.eventService.priceflag"><app-add-price></app-add-price></div>
-    <div *ngIf="this.eventService.publishflag"><app-publish-event></app-publish-event></div>
-  </div>
-</div>
+
 
 
 

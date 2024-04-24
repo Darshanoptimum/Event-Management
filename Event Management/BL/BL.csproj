@@ -53,6 +53,7 @@
     <Compile Include="getEventForAdmin.cs" />
     <Compile Include="InsertActivity.cs" />
     <Compile Include="insertUser.cs" />
+    <Compile Include="MonthViseEvent.cs" />
     <Compile Include="PaggingHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="publishedEvent.cs" />

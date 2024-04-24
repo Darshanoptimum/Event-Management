@@ -1,16 +1,22 @@
-.left-side{
+.left-side {
     width: 10%;
     background: linear-gradient(to bottom, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
     color: rgb(250, 200, 200);
     min-height: 715px;
+    
 }
-.right-side{
+
+.right-side {
     width: 90%;
+      
 }
-.box{
+
+.box {
     display: flex;
 
 }
-button{
+
+button {
     border: none;
 }
+

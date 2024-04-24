@@ -1,9 +1,20 @@
 <app-nav [isUserLoggedIn]="false"></app-nav>
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row">
         <div class="col-md-5 mx-auto btn-gradient-1">
+            <div [ngSwitch] = "hour" class="text-center mb-3">
+                
+                <div *ngSwitchCase = '1'><h3>Good Morning</h3></div>
+                
+                <div *ngSwitchCase = 2><h3>Good afternoon</h3></div>
+                
+                <div *ngSwitchCase = '3'><h3>Good evening</h3></div>
+                
+                </div>
             <div id="first" [style.display]="showFirst? 'block' : 'none'">
+
                 <div class="myform form ">
+                    
                     <div class="logo mb-3 text-gradient">
                         <div class="col-md-12 text-center ">
                             <h1 class=" ">Login</h1>
@@ -47,6 +58,7 @@
                             style="color:red;">
                             Please provide a password.
                         </div>
+                        
                         <div class="col-md-12 text-center mt-3">
                             <button type="submit" id="log"
                                 class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
@@ -138,3 +150,4 @@
             </div>
         </div>
     </div>
+

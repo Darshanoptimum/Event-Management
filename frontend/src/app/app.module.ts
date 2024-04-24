@@ -22,8 +22,11 @@ import { AdminGuard } from './Guard/admin.guard';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { AdminHomePageComponent } from './components/admin-home-page/admin-home-page.component';
 import { ChangeDatePipe } from './change-date.pipe';
-import { SocialAuthService } from 'angularx-social-login';
 import { AfterdatePipe } from './afterdate.pipe';
+import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from 'angularx-social-login';
+import { AllEventComponent } from './components/all-event/all-event.component';
+import { MonthViseEventComponent } from './components/month-vise-event/month-vise-event.component';
+import { MonthViseEventDataComponent } from './components/month-vise-event-data/month-vise-event-data.component';
 
 @NgModule({
   declarations: [
@@ -41,14 +44,30 @@ import { AfterdatePipe } from './afterdate.pipe';
     AdminHomePageComponent,
     ChangeDatePipe,
     AfterdatePipe,
+    AllEventComponent,
+    MonthViseEventComponent,
+    MonthViseEventDataComponent,
 
 
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule, HttpClientModule, AppRoutingModule, RouterModule,
+    ReactiveFormsModule, HttpClientModule, AppRoutingModule, RouterModule,SocialLoginModule,
   ],
-  providers: [SignupComponent, ],
+  exports:[
+  ],
+  providers: [{
+    provide: 'SocialAuthServiceConfig',
+    useValue: {
+      autoLogin: false, 
+      providers: [
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider('950826798617-q8k3b869n3v96nd4lr47d7n7g5rhcen7.apps.googleusercontent.com') // your client id
+        }
+      ]
+    } as SocialAuthServiceConfig,
+  },],
   bootstrap: [AppComponent]
 
 })

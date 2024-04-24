@@ -10,6 +10,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { VieweventGuard } from './Guard/viewevent.guard';
 import { AdminHomePageComponent } from './components/admin-home-page/admin-home-page.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { GoogleLoginProvider } from 'angularx-social-login';
+import { MonthViseEventDataComponent } from './components/month-vise-event-data/month-vise-event-data.component';
 
 const routes: Routes = [
   {
@@ -19,21 +21,26 @@ const routes: Routes = [
     path: "login", component: SignupComponent
   },
   {
-    path: "admindashboard", component: AdminDashboardComponent, canActivate: [AdminGuard]
+    path: "admindashboard", component: AdminDashboardComponent,
+    // canActivate: [AdminGuard]
   },
   {
     path: 'datechange', component: AdminHomePageComponent
   },
   {
-    path: "userdashboard", component: UserDashboardComponent, canActivate: [UserGuard]
+    path: "userdashboard", component: UserDashboardComponent, 
+    // canActivate: [UserGuard]
   },
   {
     path: "viewEvent", component: ViewEventComponent, canActivate: [VieweventGuard]
   },
   {
+    path: "monthdata", component: MonthViseEventDataComponent
+  },
+  {
     path: '**', component: HomePageComponent
   },
-
+  
 
 ]
 

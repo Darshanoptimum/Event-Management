@@ -13,3 +13,20 @@ th {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.item{
+  position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-image: linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9)) 1;
+
+    border-radius: 1.1rem;
+    outline: 0;
+}

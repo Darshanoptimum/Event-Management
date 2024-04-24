@@ -1,13 +1,11 @@
-<div class="border border-secondary">
-
-
+<div class="item">
     <div class="logo mt-5">
         <div class="col-md-12 text-center">
             <h1>All Upcomings Events</h1>
         </div>
     </div>
     <div class="container mt-5 w-75">
-        <table class="table table-primary" id="expensestable">
+        <table class="table table-primary" id="expensestable" >
             <thead>
                 <tr>
                     <th scope="col" class="text-center">Index</th>
@@ -23,7 +21,7 @@
                     <td class="text-center">{{data.EventName}}</td>
                     <td class="text-center">{{data.EventStartDate}}</td>
                     <td class="text-center">{{data.EventEndDate}}</td>
-                    <td class="text-center">{{data.AddDate  | changeDate :'month' : 'secound' }}</td>
+                    <td class="text-center" >{{data.AddDate  | changeDate :'month' : 'secound' }}</td>
                 </tr>
         </table>
     </div>

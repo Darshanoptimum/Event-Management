@@ -8,6 +8,7 @@ export class ApiService {
   public emailString?:String;
   public eventId?:any;
   public pageNumber = 1;
+  public selectMonth ?:any;
 
   constructor(private http: HttpClient) {  }
  
@@ -16,8 +17,4 @@ export class ApiService {
     const body=JSON.stringify(user);
     return this.http.post(environment.apiUrl+endPoint, body,{'headers':headers})
   }
-
-
-
- 
 } 

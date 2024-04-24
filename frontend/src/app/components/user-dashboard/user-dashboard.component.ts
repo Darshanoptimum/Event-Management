@@ -22,6 +22,7 @@ export class UserDashboardComponent implements OnInit {
   constructor(private fb: FormBuilder, private apiService: ApiService, private elementRef: ElementRef, private router: Router, private viewGuard: VieweventGuard) { }
 
   ngOnInit(): void {
+    // setInterval(() => {},1000);
     setTimeout(() => {
       let obj = { Page: 1, EventPerPage: this.EventperPage }
       // call api for first page data
@@ -45,7 +46,12 @@ export class UserDashboardComponent implements OnInit {
     this.apiService.addPerson(this.page, "api/Eventcount")
       .subscribe(
         data => {
-          this.buttonpg = Math.ceil(data / this.EventperPage)
+          if(data<this.EventperPage){
+            this.buttonpg=this.EventperPage
+          }else{
+            this.buttonpg = Math.ceil(data / this.EventperPage)
+          }
+         
           // console.log(this.buttonpg);
 
         },
@@ -77,5 +83,24 @@ export class UserDashboardComponent implements OnInit {
     this.viewGuard.viewPageFlag = true;
     this.apiService.eventId = id;
     this.router.navigate(["/viewEvent"])
+  }
+  refreshTimer() {
+    setTimeout("location.reload(true);",6000);
+}
+
+
+
+  btn1flag = false;
+  btn2flag = false;
+
+
+  btn1(){
+    this.btn1flag=true;
+    this.btn2flag=false;
+
+  }
+  btn2(){
+    this.btn2flag=true;
+    this.btn1flag=false;
   }
 }

@@ -1,7 +1,6 @@
-<app-nav [isUserLoggedIn]="true"></app-nav>
+<!-- <app-nav [isUserLoggedIn]="true"></app-nav>
 <div class="container  mt-5">
     <div class="row">
-        <!-- <div class="col-md-5 mx-auto"> -->
         <div id="first">
             <div class="myform form ">
                 <div class="logo ">
@@ -29,7 +28,7 @@
                                         <td>{{data.EventName}}</td>
                                         <td>{{data.EventStartDate}}</td>
                                         <td>{{data.EventEndDate}}</td>
-                                        <td>{{data.EventStartDate | afterdate}}</td>
+                                        <td >{{data.EventStartDate | afterdate }}</td>
                                         <td><button type="button" (click)="btnview1(data.Id)"
                                                 class=" btn btn-block mybtn btn-primary tx-tfm">view</button></td>
                                     </tr>
@@ -43,9 +42,6 @@
                     </div>
                 </div>
                 <div class="btn-group cus justify-content-center" role="group" aria-label="Basic example">
-                    <!-- <button type="button" class="btn btn-secondary"
-                        *ngFor="let j of [].constructor(buttonpg) ,let i=index" (click)="btnview(i+1)">{{i+1}}
-                    </button> -->
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                           <li class="page-item"  *ngFor="let j of [].constructor(buttonpg) ,let i=index" (click)="btnview(i+1)"><a class="page-link">{{i+1}}</a></li>
@@ -56,5 +52,41 @@
         </div>
     </div>
 </div>
+ -->
 
-<!-- {{ cdate | changeDate : 'month' :'month'}} -->
+
+ <app-nav [isUserLoggedIn]="true"></app-nav>
+
+
+
+  <div class="box">
+    <div class="left-side">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <button type="button" class="btn mt-3 text-white" (click)="btn1()">All Event</button>
+        </li>
+        <li>
+          <button type="button" class="btn mt-3 text-white" (click)="btn2()">Month vise Event</button>
+        </li>
+      </ul>
+    </div> <div class="item"></div>
+
+    <div class="right-side">
+      
+      <!-- <div *ngIf="this.eventService.homeflag"><app-admin-home-page></app-admin-home-page></div>
+      <div *ngIf="this.eventService.eventflag"><app-add-event></app-add-event></div>
+      <div *ngIf="this.eventService.activityflag"><app-add-activity></app-add-activity></div>
+      <div *ngIf="this.eventService.priceflag"><app-add-price></app-add-price></div>
+      <div *ngIf="this.eventService.publishflag"><app-publish-event></app-publish-event></div> -->
+      <div *ngIf="btn1flag"><app-all-event></app-all-event></div>
+      <div *ngIf="btn2flag"><app-month-vise-event></app-month-vise-event></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
