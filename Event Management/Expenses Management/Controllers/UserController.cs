@@ -170,7 +170,6 @@ namespace Event_Management.Controllers
                     return Request.CreateResponse(HttpStatusCode.BadRequest, response);
                 }
             }
-
             catch (Exception ex)
             {
                 InsertLog.WriteErrrorLog("UserController => AllEventsinfo => Exception " + ex.Message + ex.StackTrace);
